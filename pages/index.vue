@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Content } from '@/server/types'
+import { Content } from '@/types/microcms'
 
 const { data, pending, error, refresh } = await useAsyncData('contents', () => {
     return getClient().getList<Content>({
