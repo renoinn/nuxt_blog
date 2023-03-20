@@ -1,12 +1,9 @@
 const { API_KEY, SERVICE_DOMAIN } = process.env;
 
 export default defineNuxtConfig({
-  runtimeConfig: {
-    apiKey: API_KEY,
+  modules: ["nuxt-microcms-module"],
+  microCMS: {
     serviceDomain: SERVICE_DOMAIN,
-    //public: {
-    //  apiKey: API_KEY,
-    //  serviceDomain: SERVICE_DOMAIN,
-    //}
+    apiKey: API_KEY,
   },
 })

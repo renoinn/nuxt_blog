@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import { Content } from '@/types/microcms'
-
-const { data, pending, error, refresh } = await useAsyncData('contents', () => {
-    return getClient().getList<Content>({
-        endpoint: 'blogs',
-    })
+import { Blog } from "~~/types/Blog";
+const { data } = await useMicroCMSGetList<Blog>({
+    endpoint: "blogs",
 })
 </script>
 

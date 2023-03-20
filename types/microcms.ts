@@ -1,13 +1,12 @@
-type Content = {
-  id: string;
-  title: String;
-  contents: String;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  revisedAt: string;
-}
+import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk";
 
-export {
-  Content,
-}
+export type Blog = {
+  title?: string;
+  content?: string;
+  eyecatch?: MicroCMSImage;
+  category: (MicroCMSListContent & Category) | null;
+};
+
+export type Category = {
+  name?: string;
+};

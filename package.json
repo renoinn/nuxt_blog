@@ -11,6 +11,7 @@
     "nuxt": "^3.2.3"
   },
   "dependencies": {
-    "microcms-js-sdk": "^2.3.2"
+    "microcms-js-sdk": "^2.3.2",
+    "nuxt-microcms-module": "^3.0.0"
   }
 }
