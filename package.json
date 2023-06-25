@@ -8,10 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.2.3"
+    "@types/aws-lambda": "^8.10.119",
+    "nuxt": "^3.6.0",
+    "typescript": "5.1"
   },
   "dependencies": {
-    "microcms-js-sdk": "^2.3.2",
-    "nuxt-microcms-module": "^3.0.0"
+    "microcms-js-sdk": "^2.5.0",
+    "nuxt-microcms-module": "^3.0.2"
   }
 }

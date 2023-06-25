@@ -7,6 +7,9 @@ const { data } = await useMicroCMSGetList<Blog>({
 </script>
 
 <template>
+  <div>
+    <img src="~/public/header-image.jpg">
+  </div>
   <ul>
     <li v-for="item in data?.contents" :key="item.id">
       <NuxtLink :to="`/${item.id}`">
