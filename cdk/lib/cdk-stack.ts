@@ -1,12 +1,12 @@
-import * as cdk from 'aws-cdk-lib';
-import { Runtime } from 'aws-cdk-lib/aws-lambda';
-import * as lambda from 'aws-cdk-lib/aws-lambda-nodejs';
+import * as cdk from "aws-cdk-lib";
+import { Runtime } from "aws-cdk-lib/aws-lambda";
+import * as lambda from "aws-cdk-lib/aws-lambda-nodejs";
 import * as cloudfront from "aws-cdk-lib/aws-cloudfront";
 import * as s3 from "aws-cdk-lib/aws-s3";
 import * as s3deployment from "aws-cdk-lib/aws-s3-deployment";
 import * as apigw from "aws-cdk-lib/aws-apigateway";
 import * as iam from "aws-cdk-lib/aws-iam";
-import { Construct } from 'constructs';
+import { Construct } from "constructs";
 
 export class CdkStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
