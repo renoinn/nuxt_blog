@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/aws-lambda": "^8.10.119",
     "nuxt": "^3.6.0",
     "typescript": "5.1"
