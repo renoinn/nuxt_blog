@@ -2,19 +2,18 @@
 import { Blog } from "~~/types/microcms";
 
 const { data } = await useMicroCMSGetList<Blog>({
-    endpoint: "blogs",
+  endpoint: "blogs",
 })
 </script>
 
 <template>
   <div>
-    <img src="~/public/header-image.jpg">
+    <ul>
+      <li v-for="item in data?.contents" :key="item.id">
+        <a :href="`/article/${item.id}`">
+          <div>{{ item.title }}{{ item.publishedAt ?? item.createdAt }}</div>
+        </a>
+      </li>
+    </ul>
   </div>
-  <ul>
-    <li v-for="item in data?.contents" :key="item.id">
-      <NuxtLink :to="`/${item.id}`">
-        <div>{{ item.title}}{{ item.publishedAt ?? item.createdAt }}</div>
-      </NuxtLink>
-    </li>
-  </ul>
 </template>
