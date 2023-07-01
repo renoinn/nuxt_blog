@@ -10,9 +10,9 @@ const { data } = await useMicroCMSGetList<Blog>({
   <div>
     <ul>
       <li v-for="item in data?.contents" :key="item.id">
-        <a :href="`/article/${item.id}`">
+        <nb-link :href="`/article/${item.id}`">
           <div>{{ item.title }}{{ item.publishedAt ?? item.createdAt }}</div>
-        </a>
+        </nb-link>
       </li>
     </ul>
   </div>
