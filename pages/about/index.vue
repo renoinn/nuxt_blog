@@ -1,8 +1,16 @@
 <template>
   <div>
     <dl>
-      <dt>github</dt>
+      <dt>Github</dt>
       <dd>https://www.github.com/renoinn</dd>
+    </dl>
+    <dl>
+      <dt>Twitter</dt>
+      <dd>https://www.twitter.com/renoinn</dd>
+    </dl>
+    <dl>
+      <dt>Zenn</dt>
+      <dd>https://zenn.dev/renoinn</dd>
     </dl>
   </div>
 </template>

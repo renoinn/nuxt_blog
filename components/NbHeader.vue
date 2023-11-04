@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="py-5 text-center text-5xl">OOMORI.lunch</h1>
+    <h1 class="text-center text-5xl">OOMORI.lunch</h1>
   </div>
 </template>
 

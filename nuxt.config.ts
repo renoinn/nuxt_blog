@@ -13,4 +13,16 @@ export default defineNuxtConfig({
     serviceDomain: SERVICE_DOMAIN,
     apiKey: API_KEY,
   },
+  css: [
+    "@/assets/scss/global.scss"
+  ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/scss/variable.scss" as variable;',
+        }
+      }
+    }
+  }
 })

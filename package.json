@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "microcms-js-sdk": "^2.5.0",
-    "nuxt-microcms-module": "^3.0.2"
+    "nuxt-microcms-module": "^3.0.2",
+    "sass": "^1.69.5"
   }
 }
