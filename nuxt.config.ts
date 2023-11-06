@@ -13,14 +13,21 @@ export default defineNuxtConfig({
     serviceDomain: SERVICE_DOMAIN,
     apiKey: API_KEY,
   },
+  tailwindcss: {
+    config: {
+      corePlugins: {
+        preflight: false,
+      }
+    },
+  },
   css: [
-    "@/assets/scss/global.scss"
+    "@/assets/scss/style.scss"
   ],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/scss/variable.scss" as variable;',
+          additionalData: '@use "@/assets/scss/foundation/variable/color.scss" as color;',
         }
       }
     }
