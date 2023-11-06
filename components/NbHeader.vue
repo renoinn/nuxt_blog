@@ -1,6 +1,13 @@
 <template>
   <div>
-    <h1 class="text-center text-5xl">OOMORI.lunch</h1>
+    <div class="text-center text-8xl">
+      <a class="title" href="/">OOMORI.LUNCH</a>
+    </div>
   </div>
 </template>
 
+<style lang="scss" scoped>
+.title {
+  color: color.$color-text;
+}
+</style>

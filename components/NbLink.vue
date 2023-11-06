@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="href" class="text-blue-600 underline">
+  <a :href="href" class="">
     <slot />
   </a>
 </template>

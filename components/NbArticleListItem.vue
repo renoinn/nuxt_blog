@@ -16,17 +16,14 @@ const createSummry = (html: string, width: number): string => {
 
 <template>
   <div>
-    <nb-link :href="`/article/${id}`">
-      <h2 class="text-2xl font-bold py-2">{{ title }}</h2>
-    </nb-link>
-    <div>
-      <div>
-        {{ categoryName }}
-      </div>
-      <div>
-        {{ publishedAt }}
+    <NbLink :href="`/article/${id}`">
+      <h2 class="my-4">{{ title }}</h2>
+    </NbLink>
+    <div class="flex mb-2">
+      <div class="">
+        Posted&nbsp;on&nbsp;{{ publishedAt }}
       </div>
     </div>
-    <p class="py-2">{{ createSummry(content || "", 200) }}</p>
+    <p class="">{{ createSummry(content || "", 200) }}</p>
   </div>
 </template>
