@@ -1,33 +1,10 @@
 <template>
-  <div class="container max-w-screen-lg mx-auto px-5 bg-white font-sans">
+  <div class="container max-w-screen-lg mx-auto px-5 bg-white">
     <nb-header class="pt-8 pb-24" />
     <slot />
     <nb-menu />
+    <NbFooter />
   </div>
 </template>
 
-<style>
-@font-face {
-  font-family: 'OpenSans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('OpenSans'),
-    url('~/public/fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('OpenSans'),
-    url('~/public/fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('OpenSans'),
-    url('~/public/fonts/OpenSans-Regular.ttf') format('truetype');
-}
-</style>
+<style></style>

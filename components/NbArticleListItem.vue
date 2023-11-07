@@ -20,10 +20,10 @@ const createSummry = (html: string, width: number): string => {
       <h2 class="my-4">{{ title }}</h2>
     </NbLink>
     <div class="flex mb-2">
-      <div class="">
-        Posted&nbsp;on&nbsp;{{ publishedAt }}
+      <div class="c-time">
+        Posted&nbsp;on&nbsp;<time>{{ publishedAt }}</time>
       </div>
     </div>
-    <p class="">{{ createSummry(content || "", 200) }}</p>
+    <p class="c-article__summary">{{ createSummry(content || "", 200) }}</p>
   </div>
 </template>
