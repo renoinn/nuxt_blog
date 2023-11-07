@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="text-center text-8xl">
+    <h1 class="text-center text-8xl">
       <a class="title" href="/">OOMORI.LUNCH</a>
-    </div>
+    </h1>
   </div>
 </template>
 
