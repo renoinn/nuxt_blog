@@ -15,7 +15,7 @@ const createSummry = (html: string, width: number): string => {
 </script>
 
 <template>
-  <div>
+  <article class="c-article p-list-article">
     <NbLink :href="`/article/${id}`">
       <h2 class="my-4">{{ title }}</h2>
     </NbLink>
@@ -25,5 +25,5 @@ const createSummry = (html: string, width: number): string => {
       </div>
     </div>
     <p class="c-article__summary">{{ createSummry(content || "", 200) }}</p>
-  </div>
+  </article>
 </template>

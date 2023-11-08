@@ -10,22 +10,24 @@ const { data } = await useMicroCMSGetListDetail<Blog>({
 </script>
 
 <template>
-  <div class="p-article" v-if="data">
+  <article class="p-article" v-if="data">
     <h1 class="mb-10">
       {{ data.title }}
     </h1>
     <img v-if="data.eyecatch" :src="data.eyecatch?.url" :width="data.eyecatch?.width" :height="data.eyecatch?.height"
       alt="" />
     <div class="mb-10">
-      <div class="mb-2">
-        Posted&nbsp;on&nbsp;<time>{{ data.publishedAt ?? data.createdAt }}</time>
-      </div>
-      <div>
-        Cateogry&nbsp;in&nbsp;{{ data.category?.name }}
-      </div>
+      <dl class="flex">
+        <dt class="my-0 mx-0 mr-2">Posted&nbsp;on</dt>
+        <dd class="my-0 mx-0">{{ data.publishedAt ?? data.createdAt }}</dd>
+      </dl>
+      <dl class="flex">
+        <dt class="my-0 mx-0 mr-2">Categorized&nbsp;in</dt>
+        <dd class="my-0 mx-0">{{ data.category?.name }}</dd>
+      </dl>
     </div>
     <section class="p-article__body" v-html="data.content"></section>
-  </div>
+  </article>
 </template>
 
 <style lang="scss"></style>
