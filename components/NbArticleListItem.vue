@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { dateToString } from "@/utils/dateToString";
+
 defineProps<{
   title: string,
   id: string,
@@ -21,7 +23,7 @@ const createSummry = (html: string, width: number): string => {
     </NbLink>
     <div class="flex mb-2">
       <div class="c-time">
-        Posted&nbsp;on&nbsp;<time>{{ publishedAt }}</time>
+        Posted&nbsp;on&nbsp;<time>{{ dateToString(publishedAt, 'YYYY-MM-DD') }}</time>
       </div>
     </div>
     <p class="c-article__summary">{{ createSummry(content || "", 200) }}</p>
